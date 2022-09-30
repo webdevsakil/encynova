@@ -1,0 +1,124 @@
+.contact-us {
+    .contact-right-area {
+        position: relative;
+
+        .contact-top {
+            .subtitle {
+                span {
+                    display: inline-block;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        top: 15px;
+                        right: -50px;
+                        content: "";
+                        height: 2px;
+                        width: 38px;
+                        background: #252525;
+                    }
+                }
+            }
+
+            .section-desc {
+                padding-right: 200px;
+
+                p {
+                    color: #3C3C3C;
+                }
+            }
+        }
+
+
+        // contact form
+        .contact-form {
+            position: absolute;
+            left: -200px;
+            margin-top: 40px;
+
+            .form-area-text {
+                p {
+                    color: #3A3A3A;
+                }
+            }
+
+            .input-area {
+                position: relative;
+
+                input {
+                    width: 100%;
+                    padding: 20px 60px;
+                    text-transform: capitalize;
+                    border: none;
+                    background: #1E1E1E;
+                    color: #fff;
+
+                    &::placeholder {
+                        color: rgba(255, 255, 255, 0.604);
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    height: 65px;
+                    padding: 0px 35px;
+                    background: #067164;
+                    color: #fff;
+                    border: none;
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media all and (min-width:320px) and (max-width:575px) {
+    .contact-us .contact-right-area .contact-top .section-desc {
+        padding-right: 0px;
+    }
+
+    .contact-us .contact-right-area .contact-form {
+        left: 0px;
+        margin-top: 40px;
+    }
+
+    .contact-us .contact-right-area .contact-form .input-area input {
+        padding: 13px 20px;
+    }
+
+    .contact-us .contact-right-area .contact-form .input-area button {
+        height: 51px;
+    }
+
+    .contact-us .contact-right-area .contact-form {
+        padding: 30px 60px;
+    }
+
+}
+
+@media all and (min-width:576px) and (max-width:767px) {
+    .contact-us .contact-right-area .contact-top .section-desc {
+        padding-right: 80px;
+    }
+
+    .contact-us .contact-right-area .contact-form {
+        left: 0px;
+        padding: 30px 60px;
+    }
+}
+
+@media all and (min-width:767px) and (max-width:991px) {
+    .contact-us .contact-right-area .contact-top .section-desc {
+        padding-right: 100px;
+    }
+
+    .contact-us .contact-right-area .contact-form {
+        left: 0px;
+        padding: 30px 10px;
+        width: 100%;
+    }
+}
